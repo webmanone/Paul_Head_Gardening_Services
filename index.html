@@ -14,31 +14,22 @@
    .responsive {
     max-width: 60%;
     height: auto;
-     .active {
-  background-color: #4CAF50;
-}
-}
-    ul.a {
+    }
+    
+    ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-     ul.c{
-      color:white;
-      list-style-type: circle;
-    }
-    
 li {
   float: left;
 }
- li.d{
-   color:white;
-      list-style-type: circle;
-    }
-    
 
 li a {
   display: block;
@@ -48,10 +39,14 @@ li a {
   text-decoration: none;
 }
 
-
-li a:hover {
+li a:hover:not(.active) {
   background-color: #111;
 }
+    ul.c{
+      color:white;
+      list-style-type: circle;
+    }
+    
     * {
   box-sizing: border-box;
 }
